@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador de texto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="presentacion-logo">
+    <img src="./assets/Logo.png" />
+  </header>
+  <main class="contenedor-general">
+    <section class="caja-principal">
+      <div class="div-texto">
+        <textarea class="cuadro-texto" name="texto" id="texto-encriptado"
+          placeholder="Escribe aquí tu texto para encriptar o desencriptar"></textarea>
+      </div>
+      <div class="Botones-principales">
+        <button onclick="encriptarCodigo()" class="Botones-principales-e">
+          Encriptar
+        </button>
+        <button onclick="DencriptarCodigo()" class="Botones-principales-d">
+          Desencriptar
+        </button>
+      </div>
+    </section>
+    <section id="cajasecund" class="caja-secundaria">
+      <div>
+        <div>
+          <h1 class="encriptador-titulo" id="texto-texto">Ningun mensaje fue encontrado</h1>
+          <p class="encriptador-texto" id="texto-parrafo">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <img class="imagen-encriptador" ; src="./assets/Muñeco.png" ; alt="No se encontro ningun texto" id="imagen" />
+      </div>
+      <textarea disabled class="texto_funcion" name="cuadro-encriptado" id="encrip-desencrip"></textarea>
+      <button onclick="copiarAlPortapapeles()" class="boton-copiar" id="copy2"> Copiar </button>
+    </section>
+  </main>
+  <footer class="footer_presentacion">
+    <p class="texto_minombre">Designed by</p>
+    <div class="mi_nombre_caja">
+      <a class="caja__botones__estilos" href="https://www.linkedin.com/in/martin-alcaraz-desbackendjunior/"> <img
+          src="./assets/linkedin.png" />Martin Alcaraz</a>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

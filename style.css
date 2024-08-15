@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --texto-inter: 'Inter', sans-serif;
+    --texto-mont: 'Montserrat', sans-serif;
+    --color-texto-principal: #134E5E;
+    --color-boton-1: linear-gradient(#000102, #8ccf9b);
+    --color-boton-2: linear-gradient(#121a1d, #dff0e3);
+    --color-fondo-1: linear-gradient(#ADA996, #F2F2F2, #DBDBDB, #EAEAEA);
+    --color-fondo-2: linear-gradient(#a79857, #F2F2F2, #DBDBDB, #c9b1b1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*            General         */
+body {
+    width: 100%;
+    background: linear-gradient(#9dacbb, #4CA1AF);
+    font-family: var(--texto-inter);
+}
+
+.presentacion-logo {
+    width: 7.5rem;
+    height: 3rem;
+    margin: 2.5rem 0 0 2.5rem;
+}
+
+.contenedor-general {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 7rem;
+}
+
+.imagen-encriptador {
+    width: 85%;
+    margin-left: 24px;
+    display: block;
+}
+
+/*Textos, Parrafos, Estilos*/
+.texto_funcion,
+.cuadro-texto {
+    font-family: var(--texto-inter);
+    font-weight: 400;
+    font-size: 1.5rem;
+    background: none;
+    text-align: left;
+    border: none;
+    resize: none;
+}
+
+.texto_funcion {
+    max-width: 22.2rem;
+    height: 30rem;
+    padding: 0.3rem;
+    border-radius: 0.9rem;
+    color: #050505;
+}
+
+.div-texto {
+    width: 100%;
+    display: flex;
+}
+
+.cuadro-texto {
+    width: 100%;
+    max-width: 42.5rem;
+    height: 18rem;
+    padding: 1rem;
+    margin-left: 4px;
+    border-radius: 35px;
+}
+
+.cuadro-texto::placeholder {
+    color: var(--color-texto-principal);
+    opacity: 0.8;
+}
+
+.encriptador-texto {
+    font-family: var(--texto-mont);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.encriptador-titulo,
+.cuadro-texto::placeholder,
+.Botones-principales-d,
+.Botones-principales-e,
+.boton-copiar {
+    font-family: var(--texto-inter);
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+    line-height: 120%;
+    padding: 0.5rem;
+}
+/*Caja Principal, Secundaria*/
+.caja-principal {
+    background-color: #b8b7b4;
+    width: 90%;
+    max-width: 688px;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    margin-top: 5rem;
+    border-radius: 32px;
+}
+
+.caja-secundaria {
+    width: 100%;
+    height: 43rem;
+    max-width: 25rem;
+    border-radius: 2rem;
+    background: var(--color-fondo-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-left: 0.4rem;
+    margin-top: 20px;
+    gap: 1.5rem;
+}
+
+.caja-secundaria>div:first-of-type {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+/*               Botones                */
+.Botones-principales {
+    background: linear-gradient(#98a1aa, #4CA1AF);
+    width: 100%;
+    max-width: 43rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 20px;
+    opacity: 85%;
+}
+
+.caja__botones__estilos {
+    max-width: 80%;
+    padding: 0.3rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    font-family: var(--texto-mont);
+    font-weight: 400;
+    font-size: 1.25rem;
+    border: 2px solid var(--color-texto-principal);
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.Botones-principales-d,
+.Botones-principales-e,
+.boton-copiar {
+    width: 48%;
+    height: 67px;
+    font-family: var(--texto-inter);
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-radius: 1.375rem;
+    cursor: pointer;
+    border: none;
+}
+
+.Botones-principales-d {
+    background: var(--color-boton-1);
+}
+
+.Botones-principales-e,
+.boton-copiar {
+    background: var(--color-boton-2);
+}
+
+.boton-copiar {
+    width: 100%;
+    max-width: 20.5rem;
+    height: 4.188rem;
+    padding-bottom: 10px;
+}
+
+/*      Footer       */
+.texto_minombre {
+    color: #EAEAEA;
+}
+
+.footer_presentacion {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #000;
+    font-family: var(--texto-mont);
+    font-weight: 400;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .caja-principal {
+        gap: 3rem;
+    }
+
+    .caja-encriptador-texto {
+        margin: 3rem;
+    }
+
+    .caja-secundaria {
+        max-width: 688px;
+    }
+
+    .caja-secundaria>div:first-of-type {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encriptador-texto {
+        max-width: 688px;
+        align-items: center;
+        height: 25rem;
+    }
+
+    .imagen-encriptador {
+        display: none;
+    }
+
+    .texto_funcion {
+        font-size: 1.25rem;
+        max-width: 688px;
+        height: 24rem;
+    }
+
+    .Botones-principales-d,
+    .Botones-principales-e,
+    .boton-copiar {
+        font-size: 1.125rem;
+    }
+
+    .encriptador-titulo {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .encriptador-texto {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .presentacion-logo {
+        margin: 1rem 0 0 -1rem;
+    }
+
+    .caja-secundaria-encriptada {
+        max-width: 22rem;
+    }
+
+    .caja-encriptador-texto-funcion {
+        width: 100%;
+        max-width: 21rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .texto_funcion {
+        height: 25rem;
+    }
+
+    .Botones-principales {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Botones-principales-d,
+    .Botones-principales-e {
+        width: 100%;
+    }
+
+    .cuadro-texto {
+        font-size: 1rem;
+    }
+
+    .encriptador-titulo,
+    .encriptador-texto {
+        font-size: 1.5rem;
+    }
+
+    .imagen-encriptador {
+        display: none;
+    }
+}
